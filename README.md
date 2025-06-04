@@ -3,22 +3,22 @@
 File Bundler CLI Tool
 A simple yet powerful C# command-line tool that bundles multiple source files from subdirectories into a single output file, with support for sorting, filtering, annotation, and customization options.
 
- Key Features
- Recursively scans subdirectories (excluding bin folders)
+🧰 Key Features
+🔁 Recursively scans subdirectories (excluding bin folders)
 
- Filters by file extension (e.g., txt, css, html, json, java, js)
+🗂 Filters by file extension (e.g., txt, css, html, json, java, js)
 
- Adds file path notes before each file (--note)
+📝 Adds file path notes before each file (--note)
 
- Removes empty lines from files (--remove)
+🧹 Removes empty lines from files (--remove)
 
- Sorts files by name or by extension (--sort)
+🔠 Sorts files by name or by extension (--sort)
 
- Inserts author name at the top of the output file (--author)
+✍️ Inserts author name at the top of the output file (--author)
 
- Supports .rsp file generation for command reuse
+⚙️ Supports .rsp file generation for command reuse
 
- bundle Command
+📦 bundle Command
 bash
 Copy
 Edit
@@ -32,7 +32,7 @@ Option	Description
 --remove / -r	Removes empty lines from each file
 --author / -a	Adds author's name at the top of the output file
 
- Example
+🧪 Example
 bash
 Copy
 Edit
@@ -49,7 +49,7 @@ Remove any empty lines
 
 Insert "John Doe" at the top of the file
 
- Creating an .rsp File (Shortcut Script)
+📝 Creating an .rsp File (Shortcut Script)
 You can run the interactive command to generate a reusable .rsp file:
 
 bash
@@ -58,7 +58,7 @@ Edit
 fib create-rsp
 The app will prompt you for input and generate a file called RspFile.rsp.
 
- Project Structure
+📁 Project Structure
 Program.cs — Contains the main CLI logic and file handling operations
 
 RspFile.rsp — A saved command script for reuse
