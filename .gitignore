@@ -1,0 +1,35 @@
+# Ignore build outputs
+bin/
+obj/
+
+# Ignore user-specific files
+*.user
+*.suo
+*.userprefs
+
+# Ignore Visual Studio temporary files
+.vs/
+
+# Ignore Rider IDE files
+.idea/
+
+# Ignore logs and temp files
+*.log
+*.tmp
+
+# Ignore generated bundle output (optional)
+bundleFile.txt
+RspFile.rsp
+
+# Ignore NuGet packages folder
+packages/
+
+# Ignore .NET Core publish folder
+publish/
+
+# Ignore global.json lock file (optional)
+global.json
+
+# Ignore any other OS-specific files
+.DS_Store
+Thumbs.db
