@@ -1,28 +1,28 @@
 # CodeBundlerCLI
 
-File Bundler CLI Tool
+## File Bundler CLI Tool
+
 A simple yet powerful C# command-line tool that bundles multiple source files from subdirectories into a single output file, with support for sorting, filtering, annotation, and customization options.
 
-🧰 Key Features
-🔁 Recursively scans subdirectories (excluding bin folders)
+---
 
-🗂 Filters by file extension (e.g., txt, css, html, json, java, js)
+## 🧰 Key Features
 
-📝 Adds file path notes before each file (--note)
+- 🔁 Recursively scans subdirectories (excluding `bin` folders)  
+- 🗂 Filters by file extension (e.g., `txt`, `css`, `html`, `json`, `java`, `js`)  
+- 📝 Adds file path notes before each file (`--note`)  
+- 🧹 Removes empty lines from files (`--remove`)  
+- 🔠 Sorts files by name or by extension (`--sort`)  
+- ✍️ Inserts author name at the top of the output file (`--author`)  
+- ⚙️ Supports `.rsp` file generation for command reuse  
 
-🧹 Removes empty lines from files (--remove)
+---
 
-🔠 Sorts files by name or by extension (--sort)
+## 📦 `bundle` Command Example
 
-✍️ Inserts author name at the top of the output file (--author)
-
-⚙️ Supports .rsp file generation for command reuse
-
-📦 bundle Command
-bash
-Copy
-Edit
+```bash
 fib bundle --output path/to/output.txt --language txt,css --note --sort --remove --author "Your Name"
+
 🛠 Options
 Option	Description
 --output / -o	Path to the output file
@@ -32,7 +32,7 @@ Option	Description
 --remove / -r	Removes empty lines from each file
 --author / -a	Adds author's name at the top of the output file
 
-🧪 Example
+🧪 Usage Example
 bash
 Copy
 Edit
@@ -62,4 +62,3 @@ The app will prompt you for input and generate a file called RspFile.rsp.
 Program.cs — Contains the main CLI logic and file handling operations
 
 RspFile.rsp — A saved command script for reuse
-
